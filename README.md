@@ -1,5 +1,6 @@
-# GB/T 7714-2015 BibTeX Style
+# GB/T 7714-1987 BibTeX Style
 
+鄙校要求使用 GB/T 7714-1987 格式的引用，所以尝试创建分支以解决排版的问题。
 
 [![CTAN](https://img.shields.io/ctan/v/gbt7714.svg)](https://ctan.org/pkg/gbt7714)
 [![GitHub release](https://img.shields.io/github/release/CTeX-org/gbt7714-bibtex-style/all.svg)](https://github.com/CTeX-org/gbt7714-bibtex-style/releases/latest)

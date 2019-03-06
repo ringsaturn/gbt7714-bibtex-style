@@ -1,5 +1,5 @@
 % \iffalse meta-comment
-% GB/T 7714-2015 BibTeX Style
+% GB/T 7714-1987 BibTeX Style
 % https://github.com/CTeX-org/gbt7714-bibtex-style
 %
 % Copyright (C) 2016-2019 by Zeping Lee <zepinglee AT gmail.com>
@@ -24,7 +24,7 @@
 \input docstrip.tex
 \preamble
 -------------------------------------------------------------------
-GB/T 7714-2015 BibTeX Style
+GB/T 7714-1987 BibTeX Style
 https://github.com/CTeX-org/gbt7714-bibtex-style
 Version: 2019/01/02 v1.1
 -------------------------------------------------------------------
@@ -79,7 +79,7 @@ version 2005/12/01 or later.
 %<package>\NeedsTeXFormat{LaTeX2e}[1999/12/01]
 %<package>\ProvidesPackage{gbt7714}
 %<*package>
-  [2019/01/02 v1.1 GB/T 7714-2015 BibTeX Style]
+  [2019/01/02 v1.1 GB/T 7714-1987 BibTeX Style]
 %</package>
 %
 %<*driver>
@@ -162,7 +162,7 @@ version 2005/12/01 or later.
 %
 % \GetFileInfo{\jobname.dtx}
 %
-% \title{GB/T 7714-2015 \BibTeX{} style}
+% \title{GB/T 7714-1987 \BibTeX{} style}
 % \author{Zeping Lee\thanks{zepinglee AT gmail.com}}
 % \date{\filedate\qquad\fileversion}
 % \maketitle
@@ -172,7 +172,7 @@ version 2005/12/01 or later.
 %
 % \begin{abstract}
 % The \pkg{gbt7714} package provides a \BibTeX{} implementation for the China's
-% bibliography style standard GB/T 7714-2015.
+% bibliography style standard GB/T 7714-1987.
 % It consists of two bst files for numerical and authoryear styles as well as a
 % \LaTeX{} package which provides the citation style defined in the standard.
 % It is compatible with \pkg{natbib} and supports language detection (Chinese
@@ -181,7 +181,7 @@ version 2005/12/01 or later.
 %
 % \section{简介}
 %
-% GB/T 7714-2015 《信息与文献\quad 参考文献著录规则》\cite{gbt77142015}
+% GB/T 7714-1987 《信息与文献\quad 参考文献著录规则》\cite{gbt77142015}
 % （以下简称“国标”）是中国的参考文献推荐标准。
 % 本宏包是国标的 \BibTeX{}\cite{bibtex} 实现，具有以下特性：
 % \begin{itemize}
@@ -383,7 +383,7 @@ version 2005/12/01 or later.
 % 还给每行 bst 代码写了 java 语言注释。
 % 沈周\cite{sz2016}基于 \pkg{biblatex-caspervector}\cite{vector2012} 进行修改，
 % 以符合国标的格式。
-% 胡振震发布了符合 GB/T 7714-2015 标准的 BibLaTeX 参考文献样式\cite{hzz2016}，
+% 胡振震发布了符合 GB/T 7714-1987 标准的 BibLaTeX 参考文献样式\cite{hzz2016}，
 % 并进行了比较完善的持续维护。
 %
 %
@@ -468,7 +468,7 @@ version 2005/12/01 or later.
 %
 % \bibitem[胡振震(2016)]{hzz2016}
 % 胡振震.
-% \newblock 符合 GB/T 7714-2015 标准的 biblatex
+% \newblock 符合 GB/T 7714-1987 标准的 biblatex
 %   参考文献样式\allowbreak[M/OL].
 % \newblock 2016.
 % \newblock
@@ -2725,7 +2725,7 @@ FUNCTION {incollection}
   new.slash
   format.editors output
   new.block
-  format.series.vol.num.booktitle "booktitle" output.check
+  format.series.vol.num.booktitle "[C]" * "booktitle" output.check
   new.block
   format.edition output
   new.block
@@ -2995,7 +2995,7 @@ FUNCTION {inbook} { book }
 %                       organization, publisher, note
 %    \begin{macrocode}
 FUNCTION {inproceedings}
-{ "C" set.entry.mark
+{ "A" set.entry.mark
   incollection
 }
 
