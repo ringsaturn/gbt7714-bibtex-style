@@ -6,7 +6,7 @@
 %%
 %% gbt7714.dtx  (with options: `ustc,2015,numerical,nouppercase,nomark,italicjournal')
 %% -------------------------------------------------------------------
-%% GB/T 7714-2015 BibTeX Style
+%% GB/T 7714-1987 BibTeX Style
 %% https://github.com/CTeX-org/gbt7714-bibtex-style
 %% Version: 2019/01/02 v1.1
 %% -------------------------------------------------------------------
@@ -1349,7 +1349,7 @@ FUNCTION {incollection}
   new.slash
   format.editors output
   new.block
-  format.series.vol.num.booktitle "booktitle" output.check
+  format.series.vol.num.booktitle "[C]" * "booktitle" output.check
   new.block
   format.edition output
   new.block
@@ -1500,7 +1500,7 @@ FUNCTION {dataset}
 FUNCTION {inbook} { book }
 
 FUNCTION {inproceedings}
-{ "C" set.entry.mark
+{ "A" set.entry.mark
   incollection
 }
 
